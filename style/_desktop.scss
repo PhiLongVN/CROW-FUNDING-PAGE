@@ -1,0 +1,352 @@
+.cotainer {
+  background: #fafafa;
+  overflow-x: hidden;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: auto;
+}
+
+/* ========================================================================== */
+/*                                   HEADER                                   */
+/* ========================================================================== */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  width: 100%;
+  background: red;
+  min-height: 400px;
+
+  background-image: url(../images/image-hero-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  /* --------------------------------- toggle --------------------------------- */
+  .head-toogle {
+    width: 100%;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // img
+    img {
+      min-width: 40px;
+      min-height: 20px;
+    }
+
+    .tg-menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.3rem;
+
+      a {
+        font-size: 1.2rem;
+        color: white;
+        text-decoration: none;
+        text-shadow: 2px 2px 5px black;
+        padding: 0.5rem;
+
+        &:hover {
+          text-decoration: underline;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+/* ========================================================================== */
+/*                                   SECTION                                  */
+/* ========================================================================== */
+.main-sec {
+  width: 60%;
+  margin: auto;
+  margin-top: -5rem;
+  border-radius: 15px;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ========================================================================== */
+/*                                    SEC1                                    */
+/* ========================================================================== */
+.sec1 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 2rem;
+  padding-top: 3rem;
+  border-radius: 15px;
+
+  // logo
+  .logo {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  // title
+  h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .sec1-title {
+    width: 100%;
+    font-size: 1rem;
+    opacity: 0.8;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  // button
+  .sec1-bt {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    span {
+      min-width: 200px;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 1rem 2rem;
+      background: #3cb4ab;
+      border-radius: 100px;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .sec1-book {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      position: relative;
+
+      span {
+        padding-left: 4.5rem;
+        background: #f4f4f4;
+        color: #2f2f2f;
+
+        &:hover {
+          opacity: 1;
+          color: #826b6be0;
+        }
+      }
+
+      img {
+        position: absolute;
+        left: 0%;
+      }
+    }
+  }
+}
+
+/* ========================================================================== */
+/*                                    SEC2                                    */
+/* ========================================================================== */
+.sec2 {
+  width: 100%;
+  padding: 3rem;
+  border-radius: 15px;
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+
+  .sec2-info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .sec2-proress {
+    width: 100%;
+    background: #f4f4f4;
+    height: 20px;
+    border-radius: 100px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 70%;
+      background: #3cb4ab;
+      border-radius: 15px;
+    }
+  }
+}
+
+/* -------------------------------- sec2-info ------------------------------- */
+.sec2 {
+  .sec2-info {
+    .info {
+      border-right: solid 2px #ececec;
+      padding-right: 0.5rem;
+
+      h2 {
+        font-size: 2.3rem;
+      }
+
+      span {
+        opacity: 0.7;
+        font-size: 1rem;
+      }
+    }
+
+    // info3
+    .info3 {
+      border-right: none;
+    }
+  }
+}
+
+/* ========================================================================== */
+/*                                    SEC3                                    */
+/* ========================================================================== */
+.secc3 {
+  width: 100%;
+  padding: 3rem;
+  border-radius: 15px;
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  //   info
+  .sec3-info {
+    h3 {
+      text-align: left;
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-size: 1rem;
+      padding: 2rem 0;
+      opacity: 0.8;
+    }
+  }
+
+  //   donate
+  .sec3-donate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+/* ------------------------- donate = p + info + title ------------------------ */
+.secc3 {
+  .sec3-donate {
+    .donate {
+      width: 100%;
+      border: solid 2px #ececec;
+      padding: 1.5rem 1rem;
+      border-radius: 15px;
+
+      //   title
+      .donate-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+          font-size: 1.3rem;
+        }
+
+        span {
+          color: #3cb4ab;
+          font-size: 1rem;
+        }
+      }
+
+      //   p
+      p {
+        font-size: 1rem;
+        padding: 1rem 0;
+        opacity: 0.8;
+      }
+
+      // info
+      .donate-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+          font-size: 2rem;
+          font-weight: 700;
+          color: black;
+
+          sup {
+            font-size: 0.8rem;
+            font-weight: 300;
+            opacity: 0.7;
+          }
+        }
+
+        button {
+          padding: 1rem 1.5rem;
+          background: #3cb4ab;
+          border: none;
+          font-size: 1rem;
+          font-weight: 500;
+          color: white;
+          border-radius: 100px;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+
+    /* --------------------------------- block3 --------------------------------- */
+    .donate3 {
+      opacity: 0.5;
+
+      .donate-info {
+        button {
+          background: #cbcbcb;
+          cursor: auto;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
