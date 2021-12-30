@@ -1,0 +1,198 @@
+@media screen and (max-width: 767px) {
+  /* ========================================================================== */
+  /*                                    HEAD                                    */
+  /* ========================================================================== */
+  .header {
+    background-image: url(../images/image-hero-mobile.jpg);
+
+    .head-toogle {
+      position: relative;
+
+      //   .toggle-icon
+      .tg-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+          position: absolute;
+
+          display: block;
+          min-width: 50px;
+          min-height: 50px;
+          padding: 0.7rem;
+          border-radius: 10px;
+          cursor: pointer;
+
+          &:hover {
+            background: rgba(228, 223, 223, 0.442);
+          }
+        }
+
+        .toggle {
+          display: none;
+        }
+
+        &.active > .toggle {
+          display: block;
+        }
+
+        &.active > .hamber {
+          display: none;
+        }
+      }
+
+      //   .tg-menu
+      .tg-menu {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 100;
+
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s ease;
+
+        width: 70%;
+        border-radius: 15px;
+        background: white;
+        border: 1px solid rgba(0, 0, 0, 0.285);
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0;
+
+        &.active {
+          visibility: visible;
+          opacity: 1;
+          top: 100%;
+        }
+
+        a {
+          padding: 1.3rem;
+          font-weight: 500;
+          color: black;
+          text-shadow: none;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.218);
+          width: 100%;
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          &:last-of-type {
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  /* ========================================================================== */
+  /*                                    SEC1                                    */
+  /* ========================================================================== */
+  .main-sec {
+    width: 80%;
+  }
+
+  .sec1 {
+    padding: 2rem 0.5rem;
+
+    .sec1-bt {
+      justify-content: space-evenly;
+      gap: 0.5rem;
+
+      span {
+        min-width: 150px;
+        padding: 1rem 1.2rem;
+        text-align: center;
+        font-size: 0.9rem;
+      }
+
+      .sec1-book {
+        span {
+          display: none;
+          padding: 0;
+          min-width: unset;
+          overflow: hidden;
+        }
+
+        img {
+          position: relative;
+          cursor: pointer;
+
+          &:hover {
+            filter: opacity(0.7);
+          }
+        }
+      }
+    }
+  }
+
+  /* ========================================================================== */
+  /*                                    SEC2                                    */
+  /* ========================================================================== */
+  .sec2 {
+    padding: 1.5rem;
+    /* ---------------------------------- info ---------------------------------- */
+    .sec2-info {
+      grid-template-columns: 1fr;
+      text-align: center;
+
+      .info {
+        border-right: unset;
+        border-bottom: solid 2px #ececec;
+        padding-bottom: 1.5rem;
+        padding-right: 0;
+      }
+      .info3 {
+        border-bottom: unset;
+        padding-bottom: 0rem;
+      }
+    }
+  }
+
+  /* ========================================================================== */
+  /*                                    SEC3                                    */
+  /* ========================================================================== */
+  .secc3 {
+    padding: 1.5rem;
+
+    .sec3-donate {
+      /* ---------------------------------- title --------------------------------- */
+      .donate-title {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        h2 {
+          align-self: flex-start;
+        }
+
+        span {
+          align-self: flex-start;
+        }
+      }
+      /* --------------------------------- donate --------------------------------- */
+      .donate-info {
+        flex-direction: column;
+        gap: 0.5rem;
+
+        span {
+          align-self: flex-start;
+        }
+
+        button {
+          padding: 1rem;
+          font-size: 0.8;
+          align-self: flex-start;
+        }
+      }
+    }
+  }
+}

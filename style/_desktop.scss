@@ -8,7 +8,9 @@
   min-height: 100vh;
   margin: auto;
 }
-
+.bg-menu {
+  display: none;
+}
 /* ========================================================================== */
 /*                                   HEADER                                   */
 /* ========================================================================== */
@@ -34,8 +36,16 @@
     justify-content: space-between;
     align-items: center;
 
+    // .toggle
+    .toggle {
+      display: none;
+    }
+    .hamber {
+      display: none;
+    }
+
     // img
-    img {
+    img:nth-of-type(1) {
       min-width: 40px;
       min-height: 20px;
     }
@@ -103,6 +113,7 @@
   h2 {
     font-size: 1.8rem;
     text-align: center;
+    padding: 0rem 0.5rem;
   }
 
   .sec1-title {
@@ -130,6 +141,7 @@
       background: #3cb4ab;
       border-radius: 100px;
       cursor: pointer;
+      text-align: center;
 
       &:hover {
         opacity: 0.8;
@@ -347,6 +359,17 @@
           }
         }
       }
+    }
+  }
+}
+
+/* ========================================================================== */
+/*                                 MEDIA 900PX                                */
+/* ========================================================================== */
+@media screen and (max-width: 900px) {
+  .sec1 {
+    .sec1-bt {
+      padding: 0;
     }
   }
 }

@@ -27,7 +27,9 @@
   </head>
   <body>
     <div class="cotainer">
-      <!-- ------------------------------- HEADER -------------------------------- -->
+      <!-- ======================================================================= -->
+      <!--                                 HEADER                                  -->
+      <!-- ======================================================================= -->
       <header class="header">
         <div class="head-toogle">
           <!-- logo -->
@@ -37,6 +39,10 @@
             <a href="">About</a>
             <a href="">Discover</a>
             <a href=""> Get Started</a>
+          </div>
+          <div class="tg-icon">
+            <img class="toggle icon" src="./images/icon-close-menu.svg" alt="" />
+            <img src="./images/icon-hamburger.svg" alt="" class="hamber icon" />
           </div>
         </div>
       </header>
@@ -152,11 +158,19 @@
             </div>
           </div>
         </div>
+        <div class="bg-menu"></div>
       </section>
+      <!-- ======================================================================= -->
+      <!--                                   CCC                                   -->
+      <!-- ======================================================================= -->
       <div class="wrap-form">
         <div class="back-form">
           <div class="form-title">
-            <img src="./images/icon-close-modal.svg" alt="" />
+            <img
+              class="close-modal"
+              src="./images/icon-close-modal.svg"
+              alt=""
+            />
             <h2>Back this project</h2>
             <span>
               Want to support us in bringing Mastercraft Bamboo Monitor Riser
@@ -197,11 +211,11 @@
                   </p>
                 </div>
               </div>
-              <div class="op-custom">
+              <div class="op-custom op-custom1">
                 <span>Enter your pledge</span>
                 <div class="op-bt">
-                  <input type="text" placeholder="$" />
-                  <button>Continue</button>
+                  <input id="input1" type="text" placeholder="$" />
+                  <button id="bt1">Continue</button>
                 </div>
               </div>
             </div>
@@ -222,22 +236,22 @@
                   </p>
                 </div>
               </div>
-              <div class="op-custom">
+              <div class="op-custom op-custom2">
                 <span>Enter your pledge</span>
                 <div class="op-bt">
-                  <input type="text" placeholder="$" />
-                  <button>Continue</button>
+                  <input id="input2" type="text" placeholder="$" />
+                  <button id="bt2">Continue</button>
                 </div>
               </div>
             </div>
             <!-- op4 -->
             <div class="option option4">
               <div class="op-col">
-                <input type="checkbox" for="op4" />
+                <input type="checkbox" for="op4" disabled />
                 <div class="op-info">
                   <div class="op-title">
-                    <label id="op2">Mahogany Special Edition</label>
-                    <span> Pledge $200 or more </span>
+                    <label id="op4">Mahogany Special Edition</label>
+                    <span id="op-span4"> Pledge $200 or more </span>
                     <strong>0<small>left</small></strong>
                   </div>
                   <p>
@@ -250,23 +264,19 @@
             </div>
           </div>
         </div>
+
+        <div class="form-finish">
+          <img src="./images/icon-check.svg" alt="" />
+          <h2>Thanks for your support!</h2>
+          <p>
+            Your pledge brings us one step closer to sharing Mastercraft Bamboo
+            Monitor Riser worldwide. You will get an email once our campaign is
+            completed.
+          </p>
+          <button class="got-it">Got it!</button>
+        </div>
       </div>
     </div>
-    <!-- ======================================================================= -->
-    <!--                                  FORM                                   -->
-    <!-- ======================================================================= -->
-
-    <!-- Selected pledge  start -->
-    Enter your pledge $200 Continue
-    <!-- Selected pledge end -->
-
-    <!-- Selection modal end -->
-
-    <!-- Success modal start -->
-
-    Thanks for your support! Your pledge brings us one step closer to sharing
-    Mastercraft Bamboo Monitor Riser worldwide. You will get an email once our
-    campaign is completed. Got it!
 
     <!-- Success modal end -->
 
