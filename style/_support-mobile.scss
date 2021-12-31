@@ -1,0 +1,120 @@
+@media screen and (max-width: 767px) {
+  .back-form {
+    width: 80%;
+    left: 10%;
+    /* ---------------------------------- form-option ---------------------------------- */
+    .form-option {
+      .option {
+        position: relative;
+
+        .op {
+          position: absolute;
+          left: 5%;
+          top: 30px;
+        }
+
+        #op1 {
+          top: 20px;
+        }
+
+        .op-info {
+          position: relative;
+
+          // .op-title
+          .op-title {
+            position: relative;
+            left: 10%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+
+            span {
+              margin-left: 0;
+            }
+
+            strong {
+              display: none;
+            }
+          }
+
+          p {
+            position: relative;
+            padding-bottom: 1rem;
+          }
+
+          .p1 {
+            padding-top: 1rem;
+          }
+
+          .str-mb {
+            display: block;
+            font-size: 1rem;
+            font-weight: 700;
+
+            small {
+              font-size: 0.8rem;
+              font-weight: 300;
+              margin-left: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* ========================================================================== */
+  /*                                   CUSTOM                                   */
+  /* ========================================================================== */
+  .form-option {
+    .option {
+      .op-custom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+
+        span {
+          text-align: center;
+        }
+
+        /* ------------------------------ button custom ----------------------------- */
+        .op-bt {
+          input {
+            width: 100px;
+            padding: 1rem 1rem;
+            font-size: 1rem;
+          }
+
+          button {
+            padding: 1rem 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .form-option {
+    .op-bt {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+
+      input {
+        min-width: 120px;
+        color: red;
+        padding: 1rem 2rem;
+      }
+
+      button {
+        text-align: center;
+        width: 80%;
+        padding: 0.5rem;
+      }
+    }
+  }
+}

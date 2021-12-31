@@ -8,9 +8,7 @@
   min-height: 100vh;
   margin: auto;
 }
-.bg-menu {
-  display: none;
-}
+
 /* ========================================================================== */
 /*                                   HEADER                                   */
 /* ========================================================================== */
@@ -37,10 +35,7 @@
     align-items: center;
 
     // .toggle
-    .toggle {
-      display: none;
-    }
-    .hamber {
+    .tg-icon {
       display: none;
     }
 
@@ -51,6 +46,7 @@
     }
 
     .tg-menu {
+      margin-left: auto;
       display: flex;
       justify-content: center;
       align-items: center;
